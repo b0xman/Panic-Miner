@@ -60,10 +60,17 @@
       <Link>SDL.dll</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\Player\cargo 01.png" />
+    <Content Include="Content\Player\drill 01.png" />
+    <Content Include="Content\Player\engine 01.png" />
+    <Content Include="Content\Terrain\dirt 01.png" />
+    <Content Include="Content\Terrain\stone 02.png" />
     <Content Include="Icon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Content\" />
+    <Folder Include="Content\Background\" />
+    <Folder Include="Content\Enemy\" />
+    <Folder Include="Content\Texture\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
