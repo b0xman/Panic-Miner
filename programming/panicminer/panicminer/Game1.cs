@@ -99,12 +99,7 @@ namespace panicminer
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            graphics.GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // Draw the sprite.
-            spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
-            spriteBatch.Draw(Dirt, spritePosition, Color.White);
-            spriteBatch.End();
 
             // TODO: Add your update logic here
 
@@ -122,6 +117,10 @@ namespace panicminer
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
+            // Draw the sprite.
+            spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
+            spriteBatch.Draw(Dirt, spritePosition, Color.White);
+            spriteBatch.End();
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);
