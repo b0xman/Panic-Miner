@@ -1,0 +1,10 @@
+C:\Users\Carl\Documents\GitHub\Panic-Miner\programming\panicminer\panicminer\bin\WindowsGL\Debug\SDL.dll
+C:\Users\Carl\Documents\GitHub\Panic-Miner\programming\panicminer\panicminer\bin\WindowsGL\Debug\panicminer.exe
+C:\Users\Carl\Documents\GitHub\Panic-Miner\programming\panicminer\panicminer\bin\WindowsGL\Debug\panicminer.pdb
+C:\Users\Carl\Documents\GitHub\Panic-Miner\programming\panicminer\panicminer\bin\WindowsGL\Debug\Lidgren.Network.dll
+C:\Users\Carl\Documents\GitHub\Panic-Miner\programming\panicminer\panicminer\bin\WindowsGL\Debug\MonoGame.Framework.dll
+C:\Users\Carl\Documents\GitHub\Panic-Miner\programming\panicminer\panicminer\bin\WindowsGL\Debug\OpenTK.dll
+C:\Users\Carl\Documents\GitHub\Panic-Miner\programming\panicminer\panicminer\bin\WindowsGL\Debug\Tao.Sdl.dll
+C:\Users\Carl\Documents\GitHub\Panic-Miner\programming\panicminer\panicminer\obj\x86\Debug\Panic_Miner.csprojResolveAssemblyReference.cache
+C:\Users\Carl\Documents\GitHub\Panic-Miner\programming\panicminer\panicminer\obj\x86\Debug\panicminer.exe
+C:\Users\Carl\Documents\GitHub\Panic-Miner\programming\panicminer\panicminer\obj\x86\Debug\panicminer.pdb
