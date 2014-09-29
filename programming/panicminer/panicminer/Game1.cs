@@ -1,12 +1,12 @@
 ﻿#region Using Statements
-using System;
-using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Storage;
-using Microsoft.Xna.Framework.GamerServices;
+using System;
+using System.Collections.Generic;
 #endregion
 
 namespace panicminer
@@ -99,7 +99,41 @@ namespace panicminer
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
+            // Move the sprite by speed, scaled by elapsed time.
+            spritePosition +=
+                spriteSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
 
+            int MaxX =
+                graphics.GraphicsDevice.Viewport.Width - myTexture.Width;
+            int MinX = 0;
+            int MaxY =
+                graphics.GraphicsDevice.Viewport.Height - myTexture.Height;
+            int MinY = 0;
+
+            // Check for bounce.
+            if (spritePosition.X > MaxX)
+            {
+                spriteSpeed.X *= -1;
+                spritePosition.X = MaxX;
+            }
+
+            else if (spritePosition.X < MinX)
+            {
+                spriteSpeed.X *= -1;
+                spritePosition.X = MinX;
+            }
+
+            if (spritePosition.Y > MaxY)
+            {
+                spriteSpeed.Y *= -1;
+                spritePosition.Y = MaxY;
+            }
+
+            else if (spritePosition.Y < MinY)
+            {
+                spriteSpeed.Y *= -1;
+                spritePosition.Y = MinY;
+            }
 
             // TODO: Add your update logic here
 
