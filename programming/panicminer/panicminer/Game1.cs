@@ -13,6 +13,8 @@ namespace panicminer
 {
     /// <summary>
     /// This is the main type for your game
+    /// this is called immediatly after the main method for the program
+    /// this is where the game starts and will be open most of the time!
     /// </summary>
     public class Game1 : Game
     {
