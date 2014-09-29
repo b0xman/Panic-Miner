@@ -9,6 +9,8 @@ namespace panicminer
 #if WINDOWS || LINUX
     /// <summary>
     /// The main class.
+    /// Unless I'm running parallel this shouldn't even be edited
+    /// as far as i'm aware, that would be "good" code.
     /// </summary>
     public static class Program
     {
