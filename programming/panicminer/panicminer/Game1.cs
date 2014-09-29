@@ -54,8 +54,21 @@ namespace panicminer
         /// </summary>
         protected override void LoadContent()
         {
+            // This is a texture we can render.
+            Texture2D myTexture;
+
+            // Set the coordinates to draw the sprite at.
+            Vector2 spritePosition = Vector2.Zero;
+
+            // Store some information about the sprite's motion.
+            Vector2 spriteSpeed = new Vector2(50.0f, 50.0f);
+
+
+
+
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            myTexture = this.Content.Load<Texture2D>("Dirt");
 
             // TODO: use this.Content to load your game content here
         }
@@ -85,6 +98,13 @@ namespace panicminer
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
+
+            graphics.GraphicsDevice.Clear(Color.CornflowerBlue);
+
+            // Draw the sprite.
+            spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
+            spriteBatch.Draw(Dirt, spritePosition, Color.White);
+            spriteBatch.End();
 
             // TODO: Add your update logic here
 
