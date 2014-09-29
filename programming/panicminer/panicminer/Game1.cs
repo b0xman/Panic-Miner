@@ -33,6 +33,10 @@ namespace panicminer
         /// This is where it can query for any required services and load any non-graphic
         /// related content.  Calling base.Initialize will enumerate through any components
         /// and initialize them as well.
+        /// 
+        /// Note: Any assets that do note require a GraphicsDevice to be initilize
+        /// should be initialized here.
+        /// 
         /// </summary>
         protected override void Initialize()
         {
@@ -44,6 +48,9 @@ namespace panicminer
         /// <summary>
         /// LoadContent will be called once per game and is the place to load
         /// all of your content.
+        /// 
+        /// NOTE: load any necessary game assets such as models and textures
+        /// 
         /// </summary>
         protected override void LoadContent()
         {
@@ -56,6 +63,9 @@ namespace panicminer
         /// <summary>
         /// UnloadContent will be called once per game and is the place to unload
         /// all content.
+        /// 
+        /// NOTE: Release any game assets, normally this needs no extra code.
+        /// 
         /// </summary>
         protected override void UnloadContent()
         {
@@ -65,6 +75,10 @@ namespace panicminer
         /// <summary>
         /// Allows the game to run logic such as updating the world,
         /// checking for collisions, gathering input, and playing audio.
+        /// 
+        /// NOTE: Update game logic, move objects around, take player input
+        /// decide the outcome of collisions between objects and so on.
+        /// 
         /// </summary>
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
@@ -79,6 +93,9 @@ namespace panicminer
 
         /// <summary>
         /// This is called when the game should draw itself.
+        /// 
+        /// NOTE: Render all Objects and Backgrounds on screen.
+        /// 
         /// </summary>
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
